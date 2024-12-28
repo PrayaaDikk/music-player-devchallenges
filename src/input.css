@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .playSvg {
+    content: url("../assets/pause.svg");
+  }
+}
