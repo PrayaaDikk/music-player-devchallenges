@@ -554,10 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.playSvg {
-  content: url("../assets/pause.svg");
-}
-
 .absolute {
   position: absolute;
 }
@@ -726,6 +722,10 @@ video {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.playSvg {
+  content: url("../assets/pause.svg");
+}
+
 .hover\:bg-\[\#a83163\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(168 49 99 / var(--tw-bg-opacity));
@@ -765,3 +765,5 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(201 59 118 / var(--tw-bg-opacity));
 }
+
+  

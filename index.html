@@ -17,18 +17,14 @@
 	<body class="font-inter font-medium">
 		<img
 			src="./assets/bg.jpg"
-			class="absolute w-full h-full bottom-0 -z-10"
+			class="absolute w-full h-full bottom-0 -z-10 select-none"
 		/>
 		<main class="w-screen h-screen flex justify-center items-center">
 			<div class="bg-[#2A2335] rounded-2xl p-6 backdrop-blur-lg">
-				<img
-					src="./assets/cover-1.png"
-					alt="cover-1"
-					class="w-64 rounded-2xl"
-				/>
+				<img id="songCover" class="w-64 rounded-2xl" />
 				<div class="text-center mt-3 select-none">
-					<h1 class="text-whiteTheme">Lost in the City Lights</h1>
-					<p class="text-[12px] text-grayTheme">Cosmo Sheldrake</p>
+					<h1 class="text-whiteTheme" id="titleSong"></h1>
+					<p class="text-[12px] text-grayTheme" id="artistSong"></p>
 				</div>
 				<div class="grid place-items-center">
 					<div class="flex items-center justify-between">
@@ -43,19 +39,19 @@
 					/>
 					<audio
 						id="audioPlayer"
-						src="./assets/lost-in-city-lights-145038.mp3"
 						type="audio/mp3"
 						class="hidden"
 						controls
 					></audio>
 				</div>
 				<div class="flex items-center justify-center gap-5 w-full">
-					<button id="reverseBtn"></button>
+					<button type="button" id="reverseBtn"></button>
 					<button
+						type="button"
 						id="playPauseBtn"
 						class="p-2 rounded-full bg-primary drop-shadow-[0_4px_5px_#C93B7655] hover:bg-[#a83163] hover:drop-shadow-[0_4px_5px_#a8316355] playSvg"
 					></button>
-					<button id="nextBtn"></button>
+					<button type="button" id="nextBtn"></button>
 				</div>
 			</div>
 		</main>
