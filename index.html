@@ -23,26 +23,33 @@
 			<div class="bg-[#2A2335] rounded-2xl p-6 backdrop-blur-lg">
 				<img id="songCover" class="w-64 rounded-2xl" />
 				<div class="text-center mt-3 select-none">
-					<h1 class="text-whiteTheme" id="titleSong"></h1>
-					<p class="text-[12px] text-grayTheme" id="artistSong"></p>
+					<h1 class="text-whiteTheme" id="titleSong">
+						<!-- title -->
+					</h1>
+					<p class="text-[12px] text-grayTheme" id="artistSong">
+						<!-- artist -->
+					</p>
 				</div>
-				<div class="grid place-items-center">
-					<div class="flex items-center justify-between">
-						<p id="currTime"></p>
-						<p id="audioDuration"></p>
+				<div class="grid place-items-center my-5">
+					<div
+						class="flex items-center justify-between w-full text-grayTheme text-[10px]"
+					>
+						<p id="currTime"><!--audio current time--></p>
+						<p id="audioDuration"><!-- audio duration --></p>
 					</div>
-					<input
-						type="range"
-						name="musicBar"
-						id="musicBar"
-						class="my-5 w-full appearance-none cursor-pointer rounded-full h-1 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:bg-primary [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:rounded-full"
-					/>
-					<audio
-						id="audioPlayer"
-						type="audio/mp3"
-						class="hidden"
-						controls
-					></audio>
+					<!-- music bar -->
+					<div
+						id="music-bar"
+						class="w-full appearance-none rounded-full h-1 bg-whiteTheme cursor-pointer"
+					>
+						<div
+							id="music-bar-fill"
+							class="bg-primary h-1 w-0 rounded-full shadow-[0_0_6px] shadow-primaryShadow"
+						>
+							<!-- music fill bar -->
+						</div>
+					</div>
+					<!-- music bar -->
 				</div>
 				<div class="flex items-center justify-center gap-5 w-full">
 					<button type="button" id="reverseBtn"></button>

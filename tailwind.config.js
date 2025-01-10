@@ -11,6 +11,7 @@ module.exports = {
 				secondary: "#2A2335",
 				whiteTheme: "#E5E7EB",
 				grayTheme: "#4D5562",
+				primaryShadow: "#C93B7677",
 			},
 		},
 	},
